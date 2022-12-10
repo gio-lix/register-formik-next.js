@@ -19,7 +19,7 @@ const Layout: FC<Props> = ({
             </Head>
             <div className="flex h-screen">
                 <div className="m-auto bg-slate-50 rounded-md w-3/5 h-3/4 grid lg:grid-cols-3 ">
-                    <div className="h-full w-full  bg-red-400">
+                    <div className="h-full w-full">
                         <img
                             className="cover h-full w-full object-cover"
                             src={"/assets/emre.jpg"}

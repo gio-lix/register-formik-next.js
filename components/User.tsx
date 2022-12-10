@@ -26,9 +26,9 @@ const User: FC<Props> = ({user}) => {
 
     return (
         <section className={`relative container mx-auto text-center py-20  ${classname}`}>
-            <article  className={`${s.user_info}  mb-10`}   >
+            <article  className={`${s.user_info} m-auto  mb-10 text-indigo-600`}   >
                 <h3>Authorize User Homepage</h3>
-                <div className={`details ${s.user_details}`}>
+                <div className={`details ${s.user_details} text-gray-800`}>
                     <h5 className="text-xl mb-6">{user.name}</h5>
                     <h5 className="text-xl">{user.email}</h5>
                 </div>
@@ -36,11 +36,13 @@ const User: FC<Props> = ({user}) => {
             <div className="absolute right-10 top-0">
                 <button
                     onClick={() => signOut()}
-                    className="mt-5 px-10 py-1 border-none bg-transparent text-xl font-extrabold text-white hover:text-black rounded-sm bg-gray-200">Sign Out
+                    className="mt-5 px-10 py-1 border-none
+                    bg-transparent text-xl font-extrabold text-white hover:text-black rounded-sm ">Sign Out
                 </button>
             </div>
             <div className={`flex justify-center ${s.profile_nav}`}>
-                <Link href="/profile"><span className="flex items-center mt-5 font-extrabold group px-12 text-white text-2xl py-2 text-gray-800 ">
+                <Link href="/profile"><span className="flex items-center mt-5 font-extrabold
+                group px-12 text-white text-xl py-2 text-gray-800 ">
                     Profile Page
                     <i className="group-hover:text-white  text-4xl rotate-180 ml-5 group-hover:text-green-300">
                         <BsArrowLeftShort/>
